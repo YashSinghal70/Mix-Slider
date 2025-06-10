@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.product-itemcaro{
+    border: 2px solid rgba(0, 0, 0, 0.415);
+    border-radius: 5px;
+    /* for 3d tilt parent */
+    transform-style: preserve-3d !important;
+}
+.product-imgcaro{
+    position: relative;
+    overflow: hidden;
+}
+.btnscaro{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+.btnscaro button{
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.btnscaro button:hover{
+    color: #fcb941;
+}
+.product-imgcaro:hover .btnscaro{
+    bottom: 0;
+}
+
+.heart-icon{
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
+}
+.heart-icon:active{
+    color: red !important;
+}
+
+.product-type{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.product-namecaro{
+    transition: all 0.3s ease-in-out;
+}
+.product-namecaro:hover{
+    color: #fcb941!important;
+}
+.product-pricecaro{
+    color: #fcb941;
+}
+.ratingcaro{
+    font-size: 13px;
+}
+.product-itemcaro{
+    width: 300px;
+
+}
+.product-itemcaro img{
+    transition: all .3s linear;
+    overflow: hidden;
+}
+.product-itemcaro img:hover{
+transform: scale(1.1);
+}
+.carobder{
+    /* border: 2px solid black;
+    border-radius: 5px; */
+}
+.product-info{
+        /* for 3d tilt child */
+    transform: translateZ(20px) !important;
+}
